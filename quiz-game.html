@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography Quiz!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main game -->
+    <div class="container flex">
+
+        <!-- Display question -->
+        <div class="question-display">
+            <span class="question"></span>
+        </div>
+
+        <!-- Display choices -->
+        <div class="choices-container"></div>
+
+        <!-- Quit button -->
+        <button class="quit">Quit</button>
+
+        <!-- Score display -->
+        <div class="score-container">
+            <span class="score"></span>
+        </div>
+
+    </div>
+
+    <!-- Display result -->
+    <div class="display-result flex">
+        <span class="result">You're answer is</span>
+        <span class="correct-wrong"></span>
+        <span class="streak"></span>
+        <button class="next">Next Question</button>
+    </div>
+
+    <!-- Welcome screen -->
+    <div class="start-container flex">
+        <span class="game-title">Geography Quiz</span>
+        <!-- Start button -->
+        <button class="start">Start</button>
+    </div>
+
+    <!-- End of game display -->
+    <div class="end-game flex">
+        <span class="game-over">Game Over!</span>
+        <span class="your-score">Your Score:</span>
+        <span class="final-score"></span>
+        <button class="restart">Play Again</button>
+        <button class="quit-game">Quit Game</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

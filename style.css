@@ -1,0 +1,174 @@
+:root{
+    --white: #FFF;
+    --red: #BB051D;
+    --green: #63C328;
+    --violet: #8B008B;
+    --black: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    color: var(--white);
+    position: relative;
+    font-family: sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-container{
+    position: absolute;
+    visibility: visible;
+    background-color: var(--violet);
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.game-title{
+    font-size: 7rem;
+}
+
+button{
+    padding: 10px 20px;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.start{
+    background-color: var(--green);
+    width: 200px;
+    margin-top: 50px;
+}
+
+.container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--violet);
+    flex-direction: column;
+    visibility: visible;
+}
+
+.question-display{
+    width: 80%;
+    height: auto;
+}
+
+.question{
+    display: block;
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    padding: 10px 40px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    border-radius: 15px;
+    margin-top: 20px;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.choices:hover{
+    background-color: var(--red);
+}
+
+.quit{
+    background-color: var(--red);
+    margin-top: 60px;
+}
+
+.score-container{
+    margin-top: 20px;
+}
+
+.score{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.display-result, .end-game{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    width: 50%;
+    border-radius: 40px;
+    flex-direction: column;
+    visibility: hidden;
+    background-color: var(--white);
+}
+
+.result{
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.correct-wrong{
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.streak{
+    color: var(--black);
+    font-size: 3rem;
+}
+
+.next{
+    background-color: var(--violet);
+    margin-top: 40px;
+}
+
+.game-over{
+    color: var(--violet);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.your-score{
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.final-score{
+    font-size: 5rem;
+    font-weight: 500;
+    color: var(--red);
+}
+
+.restart{
+    margin-top: 30px;
+    background-color: var(--green);
+}
+
+.quit-game{
+    margin-top: 20px;
+    background-color: var(--red);
+}
